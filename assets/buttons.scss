@@ -1,0 +1,56 @@
+
+button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+
+}
+
+.primary-button {
+  background: $bg-button;
+  color: white;
+  &:hover {
+    background: $bg-hover-button;
+    color: black;
+    transition-duration: .3s;
+  }
+  &:disabled{
+    cursor: inherit;
+    background: $disabled;
+    &:hover{
+      color: white;
+    }
+  }
+}
+
+
+.secondary-button {
+  border: 1px solid $bg-button;
+  background: transparent;
+  border-radius: 5px;
+  color: black;
+  &:hover {
+    background:  $bg-button;
+    color: white;
+    transition-duration: .3s;
+  }
+  &:disabled{
+    cursor: inherit;
+    background: $disabled;
+    color: white;
+    border:none;
+    &:hover{
+      background: $disabled;
+    }
+  }
+}
+
+.delete-button {
+   background: $bg-error;
+   color: white;
+   &:hover{
+     background: red;
+   }
+}
